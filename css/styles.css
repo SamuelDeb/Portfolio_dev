@@ -444,6 +444,24 @@ textarea {
     font-size: 1.1rem;
 }
 
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-link i {
+    font-size: 1.2rem;
+}
+
+.contact-link:hover {
+    background: rgba(44, 62, 80, 0.1);
+    color: #1a252f;
+}
+
 /* Footer */
 footer {
     background: #333;
