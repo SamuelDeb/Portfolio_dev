@@ -13,12 +13,12 @@
             });
         });
 
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Message envoyé avec succès ! (Ceci est une démo)');
-            this.reset();
-        });
+        // // Form submission
+        // document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     alert('Message envoyé avec succès ! (Ceci est une démo)');
+        //     this.reset();
+        // });
 
         // Données des projets avec plusieurs images
         const projects = [
@@ -26,7 +26,6 @@
                 title: "Gestion de bières",
                 description: "Développement d'une application de gestion de bières, permettant de gérer les bières (nom, couleur, type, fabricant, pays d'origine), la quantité en stock, ainsi que les factures des bières vendues.",
                 images: [
-                    "images/projet1/1.png",
                     "images/projet1/2.png",
                     "images/projet1/3.png"
                 ]
@@ -59,6 +58,17 @@
                     "images/projet4/2.png",
                     "images/projet4/4.jpg",
                     "images/projet4/5.jpg",
+                ]
+            },
+            {
+                title: "Jeu du pendu",
+                description: "Jeu du pendu sur la thématique manga, une liste de plus de 60 des mangas les plus populaire",
+                images: [
+                    "images/projet5/0.png",
+                    "images/projet5/1.png",
+                    "images/projet5/2.png",
+                    "images/projet5/3.png",
+                    "images/projet5/4.png",
                 ]
             }
 
