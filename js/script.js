@@ -70,6 +70,17 @@
                     "images/projet5/3.png",
                     "images/projet5/4.png",
                 ]
+            },
+            {
+                title: "Créaboost",
+                description: "Forum d'entraide pour collégiens et lycéens",
+                images: [
+                    "images/projet6/0.svg",
+                    "images/projet6/1.png",
+                    "images/projet6/2.png",
+                    "images/projet6/3.png",
+                    "images/projet6/4.png",
+                ]
             }
 
         ];
