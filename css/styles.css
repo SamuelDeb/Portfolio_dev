@@ -236,15 +236,19 @@ h2 {
 .modal-content {
     position: relative;
     max-width: 90%;
-    max-height: 90%;
+    max-height: 90vh;
     margin: 2% auto;
     animation: zoomIn 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .modal-header {
     color: white;
     text-align: center;
     padding: 1rem;
+    flex: 0 0 auto;
 }
 
 .modal-header h3 {
@@ -254,6 +258,14 @@ h2 {
 
 .modal-header p {
     color: #bbb;
+}
+
+.modal-header #travaux {
+    color: #ccc;
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .close-modal {
@@ -276,12 +288,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
+    flex: 0 0 auto;
+    min-height: 0;
 }
 
 .modal-image {
     max-width: 100%;
-    max-height: 70vh;
+    max-height: 50vh;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -318,6 +332,9 @@ h2 {
     gap: 1rem;
     padding: 1rem;
     flex-wrap: wrap;
+    flex: 0 0 auto;
+    overflow-y: auto;
+    max-height: 150px;
 }
 
 .thumbnail {

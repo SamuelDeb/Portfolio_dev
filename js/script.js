@@ -81,6 +81,20 @@
                     "images/projet6/3.png",
                     "images/projet6/4.png",
                 ]
+            },
+            {
+                title: "Génération Boomerang",
+                description: "Un portail web multimédia qui met en valeur les jeunes et les aînés. ",
+                travaux: "- Mise en place d'un formulaire de contact, d'une jauge de complétion de profil, fonction pour ajouter des documents et pour consulter les documents envoyés",
+                images: [
+                    // "images/projet7/0.svg",
+                    "images/projet7/1.png",
+                    "images/projet7/2.png",
+                    "images/projet7/3.png",
+                    "images/projet7/4.png",
+                    "images/projet7/5.png",
+
+                ]
             }
 
         ];
@@ -95,6 +109,17 @@
             
             document.getElementById('modalTitle').textContent = project.title;
             document.getElementById('modalDescription').textContent = project.description;
+            
+            // Afficher le paragraphe "travail effectué" s'il existe
+            const travauxElement = document.getElementById('travaux');
+            if (project.travaux) {
+                travauxElement.textContent = project.travaux;
+                travauxElement.style.display = 'block';
+            } else {
+                travauxElement.textContent = '';
+                travauxElement.style.display = 'none';
+            }
+            
             document.getElementById('modalImage').src = project.images[0];
             
             // Créer les miniatures
