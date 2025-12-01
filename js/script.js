@@ -24,7 +24,7 @@
         const projects = [
             {
                 title: "Gestion de bières",
-                description: "Développement d'une application de gestion de bières, permettant de gérer les bières (nom, couleur, type, fabricant, pays d'origine), la quantité en stock, ainsi que les factures des bières vendues.",
+                description: "Exercice de développement d'une application de gestion de bières lors de la formation de Concepteur Développeur d'Applications.",
                 images: [
                     "images/projet1/2.png",
                     "images/projet1/3.png"
@@ -32,7 +32,8 @@
             },
             {
                 title: "Application de Gestion de collections",
-                description: "Création d'une application de gestion de collections pour une entreprise de vente de collections. Plusieurs collections sont disponibles dans le logiciel: collection pièces, collection billet, collection timbres.",
+                description: "Fil rouge du Titre Professionnel de Concepteur Développeur d'Applications.",
+                travaux: "- Conception et mise en place de la base de données SQL, de la partie back-end avec JAVA et Quarkus, application en microservices (services APIKEY,MAILER,AUTH) et API REST(Swagger), travail en équipe avec LOAN et Morgan", 
                 images: [
                     "images/projet2/1.jpg",
                     "images/projet2/2.png",
@@ -41,7 +42,8 @@
             },
             {
                 title: "Application de réservation de créneaux horaires",
-                description: "Application de réservation de créneaux horaires pour particuliers et professionnels.",
+                description: "Projet de stage pour le titre professionnel de Concepteur Développeur d'Applications.",
+                travaux: "- Conception et mise en place de la base de données NoSQL(MongoDB), de la partie back-end avec JAVA et Quarkus, de la partie front-end avec JSF, application en microservices et API REST", 
                 images: [
                     "images/projet3/0.png",
                     "images/projet3/1.png",
@@ -52,6 +54,7 @@
             {
                 title: "Application de gestion de travaux de nettoyage",
                 description: "Création d'une application de gestion de travaux de nettoyage pour une entreprise de nettoyage. Fil rouge du Titre Professionnel de Développeur Web et Web Mobile.",
+                travaux: "- Conception et mise en place de la base de données MySQL, de la partie back-end avec PHP et Symfony, mise en place du back office pour la gestion des utilisateurs et des travaux, travail en équipe avec Romy", 
                 images: [
                     "images/projet4/0.png",
                     "images/projet4/1.jpg",
@@ -62,7 +65,7 @@
             },
             {
                 title: "Jeu du pendu",
-                description: "Jeu du pendu sur la thématique manga, une liste de plus de 60 des mangas les plus populaire",
+                description: "Exercice de développement d'un jeu lors de la formation de développeur web et web mobile",
                 images: [
                     "images/projet5/0.png",
                     "images/projet5/1.png",
@@ -73,7 +76,8 @@
             },
             {
                 title: "Créaboost",
-                description: "Forum d'entraide pour collégiens et lycéens",
+                description: "Projet de stage de développeur web et web mobile",
+                travaux: "- Conception et mise en place de la base de données MySQL, de la partie back-end avec PHP et Symfony, de la partie front-end avec Twig", 
                 images: [
                     "images/projet6/0.svg",
                     "images/projet6/1.png",
@@ -84,7 +88,7 @@
             },
             {
                 title: "Génération Boomerang",
-                description: "Un portail web multimédia qui met en valeur les jeunes et les aînés. ",
+                description: "Projet de stage pour la formation MS Developpement PHP ",
                 travaux: "- Mise en place d'un formulaire de contact, d'une jauge de complétion de profil, fonction pour ajouter des documents et pour consulter les documents envoyés",
                 images: [
                     // "images/projet7/0.svg",
@@ -94,6 +98,15 @@
                     "images/projet7/4.png",
                     "images/projet7/5.png",
 
+                ]
+            },
+            {
+                title: "Carnet d'adresses",
+                description: "Carnet d'adresses permettant de gérer les contacts de l'utilisateur(Ajout, modification, suppression), sauvegarde des contacts dans un fichier .txt. ",
+                images: [
+                    "images/projet8/0.png",
+                    "images/projet8/1.png",
+                    "images/projet8/2.png",
                 ]
             }
 
