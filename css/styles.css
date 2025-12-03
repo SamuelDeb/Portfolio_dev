@@ -20,6 +20,11 @@ nav {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1000;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 nav ul {
@@ -27,6 +32,7 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+    margin: 0;
 }
 
 nav a {
@@ -39,6 +45,27 @@ nav a {
 nav a:hover {
     color: #2c3e50;
 }
+
+/* Menu Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
 
 /* Header */
 header {
@@ -462,7 +489,44 @@ footer {
         font-size: 2rem;
     }
 
+    /* Menu Hamburger sur mobile */
+    .hamburger {
+        display: flex;
+    }
+
     nav ul {
-        gap: 1rem;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 5rem 0 2rem 0;
+        gap: 0;
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 1.5rem 0;
+    }
+
+    nav ul a {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    nav ul a:hover {
+        background: rgba(44, 62, 80, 0.1);
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
