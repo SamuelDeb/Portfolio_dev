@@ -49,7 +49,12 @@
             {
                 title: "Application de Gestion de collections",
                 description: "Fil rouge du Titre Professionnel de Concepteur Développeur d'Applications.",
-                travaux: "- Conception et mise en place de la base de données SQL, de la partie back-end avec JAVA et Quarkus, application en microservices (services APIKEY,MAILER,AUTH) et API REST(Swagger), travail en équipe avec LOAN et Morgan", 
+                travaux: [
+                    "Conception et mise en place de la base de données SQL",
+                    "Développement de la partie back-end avec Java et Quarkus",
+                    "Mise en place d’une architecture en microservices (services APIKEY, MAILER, AUTH) et API REST documentée avec Swagger",
+                    "Travail en équipe avec Loan et Morgan"
+                ], 
                 images: [
                     "images/projet2/1.jpg",
                     "images/projet2/2.png",
@@ -59,7 +64,12 @@
             {
                 title: "Application de réservation de créneaux horaires",
                 description: "Projet de stage pour le titre professionnel de Concepteur Développeur d'Applications.",
-                travaux: "- Conception et mise en place de la base de données NoSQL(MongoDB), de la partie back-end avec JAVA et Quarkus, de la partie front-end avec JSF, application en microservices et API REST", 
+                travaux: [
+                    "Conception et mise en place de la base de données NoSQL (MongoDB)",
+                    "Développement de la partie back-end avec Java et Quarkus",
+                    "Réalisation de la partie front-end avec JSF",
+                    "Mise en place d’une architecture microservices et d’API REST"
+                ], 
                 images: [
                     "images/projet3/0.png",
                     "images/projet3/1.png",
@@ -70,7 +80,12 @@
             {
                 title: "Application de gestion de travaux de nettoyage",
                 description: "Création d'une application de gestion de travaux de nettoyage pour une entreprise de nettoyage. Fil rouge du Titre Professionnel de Développeur Web et Web Mobile.",
-                travaux: "- Conception et mise en place de la base de données MySQL, de la partie back-end avec PHP et Symfony, mise en place du back office pour la gestion des utilisateurs et des travaux, travail en équipe avec Romy", 
+                travaux: [
+                    "Conception et mise en place de la base de données MySQL",
+                    "Développement de la partie back-end avec PHP et Symfony",
+                    "Mise en place du back office pour la gestion des utilisateurs et des travaux",
+                    "Travail en équipe avec Romy"
+                ], 
                 images: [
                     "images/projet4/0.png",
                     "images/projet4/1.jpg",
@@ -93,7 +108,11 @@
             {
                 title: "Créaboost",
                 description: "Projet de stage de développeur web et web mobile",
-                travaux: "- Conception et mise en place de la base de données MySQL, de la partie back-end avec PHP et Symfony, de la partie front-end avec Twig", 
+                travaux: [
+                    "Conception et mise en place de la base de données MySQL",
+                    "Développement de la partie back-end avec PHP et Symfony",
+                    "Réalisation de la partie front-end avec Twig"
+                ], 
                 images: [
                     "images/projet6/0.svg",
                     "images/projet6/1.png",
@@ -105,7 +124,11 @@
             {
                 title: "Génération Boomerang",
                 description: "Projet de stage pour la formation MS Developpement PHP ",
-                travaux: "- Mise en place d'un formulaire de contact, d'une jauge de complétion de profil, fonction pour ajouter des documents et pour consulter les documents envoyés",
+                travaux: [
+                    "Mise en place d’un formulaire de contact",
+                    "Ajout d’une jauge de complétion de profil",
+                    "Développement des fonctionnalités d’ajout et de consultation de documents"
+                ],
                 images: [
                     // "images/projet7/0.svg",
                     "images/projet7/1.png",
@@ -141,11 +164,14 @@
             
             // Afficher le paragraphe "travail effectué" s'il existe
             const travauxElement = document.getElementById('travaux');
-            if (project.travaux) {
-                travauxElement.textContent = project.travaux;
+            if (project.travaux && Array.isArray(project.travaux) && project.travaux.length > 0) {
+                const items = project.travaux
+                    .map(item => `<li>${item}</li>`)
+                    .join('');
+                travauxElement.innerHTML = `<ul>${items}</ul>`;
                 travauxElement.style.display = 'block';
             } else {
-                travauxElement.textContent = '';
+                travauxElement.innerHTML = '';
                 travauxElement.style.display = 'none';
             }
             
