@@ -28,7 +28,19 @@
         <div class="header-content">
             <h1>DEBAER SAMUEL</h1>
             <p>Développeur Full Stack</p>
-            <a href="#contact" class="btn">Me contacter</a>
+            <div class="header-actions">
+                <a href="#contact" class="btn">Me contacter</a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                        Télécharger mon CV
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu" role="menu">
+                        <a href="images/CV/CV_Samuel_Debaer_PHP.pdf" class="dropdown-item" download role="menuitem">CV PHP / Symfony</a>
+                        <a href="images/CV/CV_Samuel_Debaer_JAVA.pdf" class="dropdown-item" download role="menuitem">CV Java / Quarkus</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 

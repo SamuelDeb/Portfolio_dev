@@ -36,6 +36,24 @@
         //     this.reset();
         // });
 
+        // Dropdown CV
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        if (dropdown && dropdownBtn) {
+            dropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = dropdown.classList.toggle('open');
+                dropdownBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('open');
+                    dropdownBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Données des projets avec plusieurs images
         const projects = [
             {
