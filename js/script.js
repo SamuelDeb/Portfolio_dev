@@ -142,6 +142,7 @@ const projects = [
     {
         title: "Carnet d'adresses",
         description: "Carnet d'adresses permettant de gérer les contacts de l'utilisateur(Ajout, modification, suppression), sauvegarde des contacts dans un fichier .txt. ",
+
         images: [
             "images/projet8/0.png",
             "images/projet8/1.png",
@@ -151,10 +152,16 @@ const projects = [
     {
         title: "Contrôle de glycémie",
         description: "Application permettant de gérer les mesures de glycémie de l'utilisateur. ",
+        travaux: [
+            "Ajouter la possibilité de modifier/supprimer une mesure de glycémie",
+            "Ajouter la possibilité de consulter les mesures de glycémie par date/période",
+            "Ajouter la possibilité de télécharger les mesures de glycémie en format CSV"
+        ],
         images: [
-            "images/projet9/sugar1.png",
-            "images/projet9/sugar2.png",
-            "images/projet9/sugar3.png",
+            "images/projet9/InfoSucre1.png",
+            "images/projet9/InfoSucre2.png",
+            "images/projet9/InfoSucre3.png",
+            "images/projet9/InfoSucre4.png",
         ]
     }
 
