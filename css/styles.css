@@ -363,6 +363,14 @@ h2 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.modal-header #travaux ul {
+    display: inline-block;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0.5rem auto 0;
+    text-align: left;
+}
+
 .close-modal {
     position: absolute;
     top: 20px;
